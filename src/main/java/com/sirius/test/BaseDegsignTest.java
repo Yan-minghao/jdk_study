@@ -46,4 +46,13 @@ public class BaseDegsignTest {
         Console console = System.console(                                             );
         System.out.println(console);
     }
+      @Test
+      public void test05() {
+        //格式化输出
+        System.out.println(1000.0 / 3);
+        System.out.printf("%8.2f\n", 10000.0 / 3);
+    }
+
+
+
 }
