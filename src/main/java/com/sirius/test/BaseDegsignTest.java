@@ -3,6 +3,8 @@ package com.sirius.test;
 import org.junit.Test;
 
 import java.io.Console;
+import java.math.BigDecimal;
+import java.math.MathContext;
 
 /**
  * @author ymh sirius
@@ -68,6 +70,23 @@ public class BaseDegsignTest {
             System.out.println("i=" + j);
         }
 
+    }
+
+    @Test
+    public void test07(){
+        //大数 BigDecimal.ONE
+        System.out.println(BigDecimal.ONE);
+        System.out.println(BigDecimal.ZERO);
+        System.out.println(BigDecimal.TEN);
+        BigDecimal bigDecimal = new BigDecimal(1);
+        BigDecimal bigDecimal1 = new BigDecimal(1024);
+        System.out.println("-------------");
+        System.out.println(bigDecimal.add(bigDecimal1));
+        System.out.println(bigDecimal.subtract(bigDecimal1));
+        System.out.println(bigDecimal.multiply(bigDecimal1));
+        System.out.println(bigDecimal.divide(bigDecimal1));
+        System.out.println("=========");
+        System.out.println(bigDecimal1.sqrt(MathContext.DECIMAL32));
     }
 
 
